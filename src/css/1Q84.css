@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    color: #f8f8ff;
+}
+@font-face {
+    font-family: '민초';
+    src: url('../font/Hina-Mincho-Regular.ttf');
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('../font/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: "yoon";
+    src: url('../font/NanumMyeongjo.ttf');
+}
+@import url(//fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+.nanummyeongjo * {
+ font-family: 'Nanum Myeongjo', serif;
+}
+.king{
+    scroll-snap-type: y proximity;
+    overflow: auto;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+}
+.king::-webkit-scrollbar {
+    display: none;
+}
+section{
+   
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+.section1{
+    background-image: url('../img/달.jpg');
+    background-size: 60vh;
+    background-repeat: no-repeat;
+    background-position:-1vh -1vh;
+}
+.section1_header{
+    display: flex;
+    justify-content: end;
+    
+}
+.header_1{
+    position: relative;
+    top: 7vh;
+    right: 35vh;
+    font-family: 'roboto';
+}
+.header_1 span{
+    margin-left: 16vh;
+    font-size: 3vh;
+    cursor: pointer;
+}
+.header_2{
+    position: relative;
+    top: 7vh;
+    right: 11vh;
+    font-size: 3vh;
+    font-family:'roboto';
+}
+.section1{
+    background-color: #040404;
+ }
+ .title{
+    position: relative;
+    top: 45vh;
+    left: 31vh;
+ 
+ }
+.section1_subtitle{
+
+    font-family: '민초';
+    position: relative;
+    font-size: 3vh;
+    letter-spacing: 1vh;
+    left: 2vh;
+}
+.section1_maintitle1{
+    font-family: serif;
+    position: relative;
+    font-size: 12vh;
+    font-weight: bold;
+    letter-spacing: 2vh;
+        
+}
+
+.section1_maintitle2{
+    font-family:'roboto';
+    position: relative;
+    font-size: 2.5vh;
+    letter-spacing: 0.3vh;
+    left: 1vh;
+    
+}
+.section1_autor{
+    font-family:'roboto';
+    writing-mode: vertical-lr;
+    position: relative;
+    top: 0vh;
+    left: 160vh;
+    font-size: 3vh;
+    
+}
+
+
+
+.section2{
+    background-color: #040404;
+}
+.title_2{
+    font-family: 'Nanum Myeongjo';
+position: relative;
+left: 15vh;
+top: 9vh;
+
+}
+.title_2:hover > .title_2_typo{
+    font-family: "yoon"     ;
+    color: white;
+    animation: typing 5s steps(35), blink .5s step-end infinite alternate;
+    animation-fill-mode: forwards;
+}
+
+
+.title_2_typo{
+    font-family:"yoon";
+    font-style: italic;
+    color: #040404;
+    margin-bottom: 1vh;
+    font-size: 2vh;
+    width: 45ch;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;    
+}
+
+
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+.title_2_about{
+    font-family: "yoon";
+    font-size: 6vh;
+    letter-spacing: 0.4vh;
+}
+.title_2_someting{
+    font-family: "yoon";
+    font-size: 6vh;
+    font-weight: lighter;
+    
+}
+.title_2_booktitle{
+    font-family: "yoon";
+    font-size: 3vh;
+    
+    margin-top: 2vh;
+}
+.title_2_booksometing{
+    font-family: "yoon";
+    font-size: 3vh;
+   
+}
+.about_mainbox{
+position: relative;
+width: 170vh;
+height: 60vh;
+margin-top: 3.5vh;
+background-color: #040404;
+border-radius: 2px;
+display: flex;
+justify-content: space-between;
+
+}
+.about_mainbox1{
+    
+    width: 86vh;
+    height: 60vh;
+    
+    background-color: aliceblue;
+    
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    }
+.about_img{
+    width: 40vh;
+    height: 50vh;
+    margin-left: 3vh;
+    margin-top: 5vh;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.about_him{
+    margin-top: 5vh;
+    margin-right: 1.5vh;
+    width: 39vh;
+   
+}
+.him_title{
+    color: #040404;
+    font-family: "yoon";
+    font-size: 4vh;
+    letter-spacing: 0.5vh;
+    font-weight: bold;
+    line-height: 5vh;
+}
+.him_title_sub{
+    color: #040404;
+    font-family: "yoon";
+    font-size: 2vh;
+    margin-left: 0.2vh;
+    font-weight: bold;
+}
+.him_main{
+    color: #040404;
+    font-family: "yoon";
+    font-size: 2vh;
+   line-height: 3.1vh;
+   word-break:break-all;
+   margin-top: 2.5vh;
+ 
+}
+.him_main > span{
+    font-family: "yoon";
+    font-size: 2vh;
+    color: #040404;
+    font-weight: bold;
+
+}
+.highlight{
+    font-family: "yoon";
+    font-size: 2vh;
+    color: #040404;
+    background-color: lightpink;
+}
+.about_mainbox2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        width: 77vh;
+        height: 60vh;
+        
+        background-color: aliceblue;
+        
+        border-radius: 4px;
+       
+    }
+    .him_main2{
+        margin-top: 3vh;
+     
+    }
+
+
+
+.him_main2 > div{
+    color: #040404;
+    font-family: "yoon";
+    font-size: 2vh;
+    line-height: 3.1vh;
+    word-break:break-all;
+    margin-top: 2.5vh;
+    margin-right: 1vh;
+    margin-left: 1vh;  
+    text-align: center;
+    width: 67vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.italic{
+    margin-top: -2.4vh;
+    color: #040404;
+    font-family: "yoon";
+    font-style: italic;
+    font-size: 2vh;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.make_bold{
+    color: #040404;
+    font-family: "yoon";
+    font-size: 2vh;
+    font-weight: bold;
+}
+
+
+
+.him_main2 > span{
+    font-family: "yoon";
+    font-size: 2vh;
+    color: #040404;
+    font-weight: bold;
+
+}
+
+.section3{
+    background-color: #040404;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.title_3{
+    width: 170vh;
+    height: 80vh;
+    position: relative;
+    left: 15vh;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+  
+    .title_3_booktitle{
+        width: 26vh;
+        height: 0.1vh;
+        background-color: aliceblue;
+        margin-top:8vh;
+        margin-bottom: 0.3vh;
+        
+    }
+    .title_3_a_s{
+        margin-bottom: 1vh;
+
+    }
+    .title_3_about{
+        font-size: 7vh;
+        font-family: 'roboto';
+        font-weight: bold;
+        letter-spacing: 1vh;
+    }
+    .title_3_someting{
+        font-size: 3vh;
+        font-family: 'roboto';
+    }
+    .about_mainbox3{
+   
+    margin-top: 4vh;
+    width: 170vh;
+    height: 62.5vh;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    }
+    .blicking{
+        animation: blink .5s step-end infinite alternate;
+        border-left:1px solid white;
+        font-size: 2vh;        
+    }
+    .mainbox3_1{
+        background-color: aliceblue;
+        width: 80vh;
+        height: 40vh;
+        border-radius: 1vh;
+    }
+    .mainbox3_1 > img{
+        width: 15vh;
+        height: 13vh;
+        border-radius: 30px;
+        margin-right: 10vh;
+    }
+    .mainbox3_2{
+        background-color: aliceblue;
+        width: 80vh;
+        height: 40vh;
+        border-radius: 1vh;
+    }
+
+    footer{
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 9vh;
+    }
+       
